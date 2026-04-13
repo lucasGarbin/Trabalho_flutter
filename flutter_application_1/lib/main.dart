@@ -45,9 +45,16 @@ class Pagina_principal extends StatelessWidget {
         child: ListView(
           padding: EdgeInsets.fromLTRB(30, 17, 30, 16),
           children: [
-            CircleAvatar(
-              radius: 200,
-              backgroundImage: AssetImage('images/sherek.jpeg'),
+            SizedBox(
+              height: 200,
+              width: 200,
+              child: FittedBox(
+                fit: BoxFit.contain,
+                child: CircleAvatar(
+                  radius: 80,
+                  backgroundImage: AssetImage('images/sherek.jpeg'),
+                ),
+              )
             ),
             SizedBox(height: 20),
             Text(
